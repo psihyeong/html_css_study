@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,td,tr{
+            border:1px solid;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <form action="전달할URL" method="post">
+        <table>
+            <tr>
+                <td><label for ="memName">고객 명 : </label></td>
+                <td><input type="text" name="memName" id="memName" maxlength="10" ></td>
+            </tr>
+            <tr>
+                <td><label for ="memAge">전화번호 : </label></td>
+                <td><input type="text" name="memAge" id="memAge" maxlength="10"></td>
+            </tr>
+            <tr>
+                <td><label for ="memmail">E-mail : </label></td>
+                <td><input type="text" name="memmail" id="memmail" maxlength="10"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <fieldset style = "width: 320px; height: 80px;">
+                        <legend>피자 사이즈</legend>
+                        <input type="radio" name="psize">Small<br>
+                        <input type="radio" name="psize">Medium<br>
+                        <input type="radio" name="psize">Large
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <fieldset style = "width: 320px; height: 100px;">
+                        <legend>토핑 선택</legend>
+                        <input type="checkbox" name="psize">베이컨<br>
+                        <input type="checkbox" name="psize">치즈<br>
+                        <input type="checkbox" name="psize">양파<br>
+                        <input type="checkbox" name="psize">버섯
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>희망배송시간:</td>
+                <td><input type="time" min="09:00" max="22:00" width="150px"></td>
+            </tr>
+            <tr>
+                <td>배송시 요청사항 :</td>
+                <td><textarea rows="2" cols="25" name="memContent"></textarea></td>
+            </tr>
+        
+        </table>
+        <br>
+        <button>주문하기</button>
+        <button>다시 선택하기</button>
+    </form>
+</body>
+</html>
